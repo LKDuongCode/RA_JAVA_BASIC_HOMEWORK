@@ -12,7 +12,7 @@ public class Hw06 {
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
-        
+
         if (matcher.matches()) {
             System.out.println("Mật khẩu hợp lệ");
         } else {
