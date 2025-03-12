@@ -19,6 +19,7 @@ public class Student {
         this.id = 0;
         this.name = "default";
         this.age = 0;
+        this.address = "default";
         this.gender = Gender.OTHER;
         this.phoneNumber = "default";
     }
@@ -39,7 +40,6 @@ public class Student {
 
         System.out.print("id =  ");
         this.id = Integer.parseInt(sc.nextLine());
-
         System.out.print("name =  ");
         this.name = sc.nextLine();
 
