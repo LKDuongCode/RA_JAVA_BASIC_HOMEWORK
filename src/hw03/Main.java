@@ -8,8 +8,8 @@ public class Main {
 
         Rectangle obj = new Rectangle();
 
-        double len = Integer.parseInt(sc.nextLine());
-        double wid = Integer.parseInt(sc.nextLine());
+        double len = Double.parseDouble(sc.nextLine());
+        double wid = Double.parseDouble(sc.nextLine());
 
         Rectangle obj2 = new Rectangle(len,wid);
 
