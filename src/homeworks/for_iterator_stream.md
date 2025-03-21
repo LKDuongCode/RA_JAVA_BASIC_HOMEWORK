@@ -19,7 +19,5 @@
 |----------------------------------------|----------------------|
 | Truy cập phần tử theo chỉ số           | `for-loop`           |
 | Xóa phần tử khi duyệt                  | `Iterator`           |
-| Code ngắn gọn, hiện đại                | `Stream API`         |
-| Xử lý dữ liệu lớn, hiệu suất cao       | `parallelStream()`   |
-| Code đơn giản, dễ dạy – dễ học         | `for-loop`           |
+| Xử lý dữ liệu lớn, hiệu suất cao       | `Stream`   |
 | Duyệt nhanh danh sách nhỏ              | `for-loop` hoặc `Iterator` |
