@@ -88,8 +88,7 @@ public class Methods {
                     result = e;
                 }
             }
-            System.out.println("📉 Nhân viên có lương thấp nhất:");
-            result.display();
+            System.out.println(result.getName());
         }
     }
 
