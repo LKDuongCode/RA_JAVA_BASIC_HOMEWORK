@@ -14,7 +14,7 @@ public class Cart {
         System.out.println("số lượng muốn thêm vào giỏ:");
         int quantity = Methods.getValidQuantity(sc);
 
-        if(Methods.checkingExistItem(Main.availableItems,id)) throw new IllegalArgumentException("sản phẩm không tồn tại");
+        if(!Methods.checkingExistItem(Main.availableItems,id)) throw new IllegalArgumentException("sản phẩm không tồn tại");
 
         if(Methods.checkingExistItem(carts,id)) {
             Item item = carts.stream().filter(i -> i.getProduct().getId().equals(id)).findFirst().get();
