@@ -1,0 +1,2 @@
+đây là bài 3 về đọc ghi file.
+nội dung này sẽ được copy vào file mới.
