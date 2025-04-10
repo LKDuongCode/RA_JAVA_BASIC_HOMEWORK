@@ -1,0 +1,16 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="nf4f4imuHgjN3372YdK2">
+    <mxGraphModel dx="1050" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FO2NWD9cPZc7VN6szvce-1" value="Mô tả đăng nhập.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: đăng nhập&lt;/li&gt;&lt;li&gt;des: người dùng muốn đăng nhập vào hệ thống.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã có tài khoản trong hệ thống.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;đăng nhập thành công, chuyển đến trang quản lí.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user truy cập vào phần đăng nhập.&lt;/li&gt;&lt;li&gt;2. user nhập đầy đủ thông tin&amp;nbsp;&lt;/li&gt;&lt;li&gt;3. hệ thống kiểm tra tính hợp lệ của thông tin&lt;/li&gt;&lt;li&gt;4. thông báo thành công&lt;/li&gt;&lt;li&gt;5. chuyển đến trang quản lí.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;3a. tài khoản hoặc mật khẩu sai. -&amp;gt; thông báo&amp;nbsp;&lt;/li&gt;&lt;li&gt;3b. tài khoản chưa đăng kí -&amp;gt; thông báo&lt;/li&gt;&lt;li&gt;3c. dữ liệu đầu vào không hợp lệ -&amp;gt; thống báo.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="160" y="90" width="370" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-2" value="Mô tả đăng xuất.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: đăng xuất&lt;/li&gt;&lt;li&gt;des: user muốn đăng xuất khỏi tài khoản hiện tại.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;đăng xuất thành công chuyển đến trang đăng nhập.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng đăng xuất&lt;/li&gt;&lt;li&gt;2. user xác nhận đăng xuất.&lt;/li&gt;&lt;li&gt;3. chuyển đến trang đăng nhập.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a.&amp;nbsp; user không muốn đăng xuất -&amp;gt; hủy thao tác.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="160" y="420" width="370" height="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

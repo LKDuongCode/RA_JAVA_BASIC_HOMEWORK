@@ -1,0 +1,351 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="nf4f4imuHgjN3372YdK2">
+    <mxGraphModel dx="3450" dy="1035" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-53" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="2150" width="1090" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-1" value="Mô tả đăng nhập.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: đăng nhập&lt;/li&gt;&lt;li&gt;des: người dùng muốn đăng nhập vào hệ thống.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã có tài khoản trong hệ thống.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;đăng nhập thành công, chuyển đến trang quản lí.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user truy cập vào phần đăng nhập.&lt;/li&gt;&lt;li&gt;2. user nhập đầy đủ thông tin gồm username và password.&lt;/li&gt;&lt;li&gt;3. hệ thống kiểm tra tính hợp lệ của thông tin&lt;/li&gt;&lt;li&gt;4. hệ thống kiểm tra trạng thái tài khoản.&lt;/li&gt;&lt;li&gt;5. thông báo thành công&lt;/li&gt;&lt;li&gt;6. chuyển đến trang quản lí.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;3a. tài khoản hoặc mật khẩu sai. -&amp;gt; thông báo&amp;nbsp;&lt;/li&gt;&lt;li&gt;3b. tài khoản chưa đăng kí -&amp;gt; thông báo&lt;/li&gt;&lt;li&gt;3c. dữ liệu đầu vào không hợp lệ -&amp;gt; thống báo.&lt;/li&gt;&lt;li&gt;4a. status = false -&amp;gt; thông báo tài khoản bị khóa.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="160" y="40" width="370" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-2" value="Mô tả đăng xuất.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: đăng xuất&lt;/li&gt;&lt;li&gt;des: user muốn đăng xuất khỏi tài khoản hiện tại.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;đăng xuất thành công chuyển đến trang đăng nhập.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng đăng xuất&lt;/li&gt;&lt;li&gt;2. user xác nhận đăng xuất.&lt;/li&gt;&lt;li&gt;3. chuyển đến trang đăng nhập.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a.&amp;nbsp; user không muốn đăng xuất -&amp;gt; hủy thao tác.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="590" y="80" width="370" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-6" value="Mô tả chức năng quản lí phòng.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: hiển thị danh sách phòng ban.&lt;/li&gt;&lt;li&gt;des: user muốn hiển thị danh sách phòng ban và có phân trang, mỗi trang 5 phòng ban. có thể chuyển trang.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ hiển thị những phòng ban đang hoạt động.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;hiển thị danh sách phòng ban đã được phân trang basic_flow:&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng hiển thị danh sách phòng ban từ menu quản lí phòng.&lt;/li&gt;&lt;li&gt;2. lọc ra những phòng ban có trạng thái&amp;nbsp; = true.&lt;/li&gt;&lt;li&gt;3. Hiển thị danh sách phòng ban với mỗi trang là 5 phòng có các lựa chọn khác.&lt;/li&gt;&lt;ul&gt;&lt;li&gt;next - chuyển đến trang tiếp theo&lt;/li&gt;&lt;li&gt;prev - chuyển đến trang trước đó&lt;/li&gt;&lt;li&gt;back - quay lại&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;3a. danh sách trống -&amp;gt; hiển thị trống&lt;/li&gt;&lt;li&gt;3b. danh sách có 1 trang -&amp;gt; ẩn hai lựa chọn next - prev&lt;/li&gt;&lt;li&gt;3c.&amp;nbsp; duyệt đến trang cuối -&amp;gt; ẩn prev.&lt;/li&gt;&lt;li&gt;3d. đang ở trang đầu -&amp;gt; ẩn next.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="150" y="440" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-13" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1100" y="910" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-14" value="- username : String&lt;div&gt;- password : String&amp;nbsp;&lt;/div&gt;&lt;div&gt;- status: boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FO2NWD9cPZc7VN6szvce-13" vertex="1">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="FO2NWD9cPZc7VN6szvce-13" vertex="1">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-16" value="+ inputData () void&lt;div&gt;+ toString () String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FO2NWD9cPZc7VN6szvce-13" vertex="1">
+          <mxGeometry y="88" width="160" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-21" value="Department" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1180" y="1170" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-22" value="- departmentID : int&lt;div&gt;- departmentName: String&lt;/div&gt;&lt;div&gt;- description: String&lt;/div&gt;&lt;div&gt;- status: boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FO2NWD9cPZc7VN6szvce-21" vertex="1">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="FO2NWD9cPZc7VN6szvce-21" vertex="1">
+          <mxGeometry y="100" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-24" value="+ inputData () void&lt;div&gt;+ toString () String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FO2NWD9cPZc7VN6szvce-21" vertex="1">
+          <mxGeometry y="108" width="160" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-25" value="Employee" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-810" y="1120" width="390" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-26" value="- employeeId: String&lt;div&gt;- employeeName: String&lt;/div&gt;&lt;div&gt;- email: String&lt;/div&gt;&lt;div&gt;- phoneNumber: String&lt;/div&gt;&lt;div&gt;- levelSalary: int&lt;/div&gt;&lt;div&gt;- salary: double&lt;/div&gt;&lt;div&gt;- dob: LocalDate&lt;/div&gt;&lt;div&gt;- address: String&lt;/div&gt;&lt;div&gt;- status: enum(&quot;ACTIVE&quot;, &quot;INACTIVE&quot;, &quot;ONLEAVE&quot;,&quot;POLICYLEAVE&quot; )&lt;/div&gt;&lt;div&gt;- departmentId: int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FO2NWD9cPZc7VN6szvce-25" vertex="1">
+          <mxGeometry y="26" width="390" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="FO2NWD9cPZc7VN6szvce-25" vertex="1">
+          <mxGeometry y="190" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-28" value="+ inputData(): void&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FO2NWD9cPZc7VN6szvce-25" vertex="1">
+          <mxGeometry y="198" width="390" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-29" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="FO2NWD9cPZc7VN6szvce-22" target="FO2NWD9cPZc7VN6szvce-26" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-980" y="1200" as="sourcePoint" />
+            <mxPoint x="-820" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-30" value="has" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-1020" y="1210" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-31" value="Authentication_Log" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1510" y="910" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-32" value="- username: String&lt;div&gt;- time: LocalDateTime&lt;/div&gt;&lt;div&gt;- userStatus: boolean&lt;/div&gt;&lt;div&gt;- eventType : enum(&quot;LOGIN&quot;,&quot;LOGOUT&quot;)&lt;/div&gt;&lt;div&gt;- logStatus: boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FO2NWD9cPZc7VN6szvce-31" vertex="1">
+          <mxGeometry y="26" width="230" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="FO2NWD9cPZc7VN6szvce-31" vertex="1">
+          <mxGeometry y="110" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-34" value="+ inputData () void&lt;div&gt;+ toString () String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FO2NWD9cPZc7VN6szvce-31" vertex="1">
+          <mxGeometry y="118" width="230" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-35" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=-0.023;exitY=0.815;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="FO2NWD9cPZc7VN6szvce-14" target="FO2NWD9cPZc7VN6szvce-32" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1170" y="1140" as="sourcePoint" />
+            <mxPoint x="-1010" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-36" value="n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-1275" y="948" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FO2NWD9cPZc7VN6szvce-37" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-1135" y="948" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-1" value="Mô tả chức năng quản lí phòng.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: thêm mới phòng.&lt;/li&gt;&lt;li&gt;des: user muốn thêm mới 1 phòng ban.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;thêm mới một phòng ban vào danh sách phòng ban.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng thêm mới phòng ban từ menu quản lí phòng.&lt;/li&gt;&lt;li&gt;2. user nhập các thông tin cho phòng ban mới.&lt;/li&gt;&lt;li&gt;3. thêm phòng ban mới vào danh sách.&lt;/li&gt;&lt;li&gt;4. thông báo thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. thông tin nhập vào không hợp lệ -&amp;gt; thông báo và cho nhập lại.&lt;/li&gt;&lt;li&gt;2b. phòng ban trùng tên -&amp;gt; thông báo và cho nhập lại.&lt;/li&gt;&lt;li&gt;3a. mặc định trạng thái mới thêm là true.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="580" y="440" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-2" value="Mô tả chức năng quản lí phòng.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: cập nhật phòng.&lt;/li&gt;&lt;li&gt;des: user muốn cập nhật một phòng ban.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ được cập nhật đối với phòng ban đang hoạt động.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;cập nhật thông tin phòng muốn chỉnh sửa.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng cập nhật phòng ban từ menu quản lí phòng.&lt;/li&gt;&lt;li&gt;2. user nhập id hoặc tên phòng ban.&lt;/li&gt;&lt;li&gt;3. hiển thị thông tin phòng ban cần cập nhật.&lt;/li&gt;&lt;li&gt;4. user chọn thông tin cần cập nhật.&lt;/li&gt;&lt;li&gt;5. user nhập thông tin mới vào.&lt;/li&gt;&lt;li&gt;6. thông báo thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. không thấy phòng ban trùng khớp -&amp;gt; thông báo và cho nhập lại&lt;/li&gt;&lt;li&gt;2b,5a. thông tin nhập vào không hợp lệ -&amp;gt; thông báo và cho nhập lại&lt;/li&gt;&lt;li&gt;5b. tên phòng ban được sửa mới trùng với tên phòng đã có -&amp;gt; thông báo và cho nhập lại.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="440" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-3" value="Mô tả chức năng quản lí phòng.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: xóa phòng ban&lt;/li&gt;&lt;li&gt;des: user muốn xóa một phòng ban.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ áp dụng đối với phòng ban đang hoạt động.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;chuyển status thành không hoạt động. (false)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng xóa phòng ban từ menu quản lí phòng.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. user nhập id hoặc tên phòng ban.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;3. hiển thị thông tin phòng ban cần xóa và yêu cầu xác nhận.&lt;/li&gt;&lt;li&gt;4. user chọn xác nhận.&lt;/li&gt;&lt;li&gt;5. chuyển trạng thái phòng ban = false&lt;/li&gt;&lt;li&gt;6. thông báo thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. không thấy phòng ban trùng khớp -&amp;gt; thông báo và cho nhập lại&lt;/li&gt;&lt;li&gt;3c. phòng ban đã có nhân viên -&amp;gt; không thể xóa và cho nhập lại.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="440" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-4" value="Mô tả chức năng quản lí phòng.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: tìm kiếm phòng ban&lt;/li&gt;&lt;li&gt;des: user muốn tìm và hiển thị thông tin một phòng ban.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ áp dụng đối với phòng ban đang hoạt động.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;hiển thị thông tin phòng ban cần tìm.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng quản lí phòng.&lt;/li&gt;&lt;li&gt;2. user chọn chức năng tìm kiếm phòng ban.&lt;/li&gt;&lt;li&gt;3. user nhập tên phòng ban.&lt;/li&gt;&lt;li&gt;4. hiển thị thông tin phòng ban cần tìm.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;3a. không thấy phòng ban trùng khớp -&amp;gt; thông báo không tìm thấy.&lt;/li&gt;&lt;li&gt;3b. thông tin nhập vào không hợp lệ -&amp;gt; thông báo và cho nhập lại&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="440" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-5" value="Mô tả chức năng thống kê.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: thống kê số lượng nhân viên theo phòng ban.&lt;/li&gt;&lt;li&gt;des: User cần xem số lượng nhân viên hiện tại ở mỗi phòng ban để nắm tình hình tổ chức.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ thống kê những phòng ban đang hoạt động.&lt;/li&gt;&lt;li&gt;loại trừ nhân viên có trạng thái inactive.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;hiển thị danh sách phòng ban với số nhân viên bên trong.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng thống kê số lượng nhân viên theo từng phòng ban từ menu thống kê.&lt;/li&gt;&lt;li&gt;2.Hệ thống thống kê số lượng nhân viên theo từng phòng ban.&lt;/li&gt;&lt;li&gt;3. Hiển thị danh sách số lượng nhân viên theo từng phòng ban.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;3a. nếu chưa có phòng ban nào -&amp;gt; thông báo trống.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="155" y="930" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-6" value="Mô tả chức năng thống kê.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: thống kê tất cả nhân viên.&lt;/li&gt;&lt;li&gt;des: User cần xem tổng số lượng nhân viên hiện tại.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;Hiển thị thông tin tất cả nhân viên bao gồm đang làm và đã nghỉ.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng thống kê số lượng nhân viên toàn hệ thống từ menu thống kê.&lt;/li&gt;&lt;li&gt;2. hiển thị tổng số nhân viên.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. nếu chưa có nhân viên -&amp;gt; thông báo trống.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="600" y="930" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-7" value="Mô tả chức năng thống kê.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: tìm phòng ban có nhiều nhân viên nhất.&lt;/li&gt;&lt;li&gt;des: User cần xem thông tin về phòng ban có nhiều nhân viên nhất trong công ty.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ tính phòng ban đang hoạt động&lt;/li&gt;&lt;li&gt;loại trừ những nhân viên có trạng thái inactive.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;hiển thị thông tin về phòng ban có nhiều nhân viên nhất kèm số nhân viên.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng tìm phòng ban có nhiều nhân viên nhất từ menu thống kê.&lt;/li&gt;&lt;li&gt;2. hiển thị toàn bộ thông tin về phòng ban và số lượng nhân viên đang làm việc tại đây.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. danh sách phòng ban trống -&amp;gt; thông báo trống.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="930" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-8" value="Mô tả chức năng thống kê.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: tìm phòng ban có lương cao nhất&amp;nbsp;&lt;/li&gt;&lt;li&gt;des: User muốn biết phòng ban nào có trung bình lương cao nhất.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ tính phòng ban đang hoạt động&lt;/li&gt;&lt;li&gt;loại trừ những nhân viên có trạng thái inactive.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;hiển thị thông tin về phòng ban và mức lương trung bình / người.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng tìm phòng ban có lương trung bình cao nhất từ menu thống kê.&lt;/li&gt;&lt;li&gt;2. hiển thị toàn bô thông tin về phòng ban và mức lương trung bình / số lượng nhân viên.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. danh sách phòng ban trống -&amp;gt; thông báo trống.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="930" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-12" value="Mô tả chức năng quản lí nhân viên.&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: hiển thị danh sách nhân viên.&lt;/li&gt;&lt;li&gt;des: user muốn hiển thị danh sách nhân viên và có phân trang, mỗi trang 10 nhân viên. có thể chuyển trang.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;loại trừ những nhân viên có trạng thái inactive.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;hiển thị danh sách nhân viên đã được phân trang&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng hiển thị danh sách nhân viên từ menu quản lí nhân viên.&lt;/li&gt;&lt;li&gt;2. hệ thống lọc ra những nhân viên có trạng thái active, onleave, policyleave.&lt;/li&gt;&lt;li&gt;3. Hiển thị danh sách nhân viên với mỗi trang là 10 nhân viên có các lựa chọn khác.&lt;/li&gt;&lt;ul&gt;&lt;li&gt;next - chuyển đến trang tiếp theo&lt;/li&gt;&lt;li&gt;prev - chuyển đến trang trước đó&lt;/li&gt;&lt;li&gt;back - quay lại&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;3a. danh sách trống -&amp;gt; hiển thị trống&lt;/li&gt;&lt;li&gt;3b. danh sách có 1 trang -&amp;gt; ẩn hai lựa chọn next - prev&lt;/li&gt;&lt;li&gt;3c.&amp;nbsp; duyệt đến trang cuối -&amp;gt; ẩn prev.&lt;/li&gt;&lt;li&gt;3d. đang ở trang đầu -&amp;gt; ẩn next.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1420" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-14" value="Mô tả chức năng quản lí nhân viên&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: thêm mới nhân viên&lt;/li&gt;&lt;li&gt;des: user muốn thêm một nhân viên mới và có thể nhập thông tin nhân viên.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;thêm mới nhân viên vào danh sách với trạng thái active..&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng thêm mới nhân viên từ menu quản lí nhân viên.&lt;/li&gt;&lt;li&gt;2. user nhập các thông tin cho nhân viên mới&lt;/li&gt;&lt;li&gt;3. hệ thống thêm nhân viên mới vào danh sách.&lt;/li&gt;&lt;li&gt;4. thông báo thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. thông tin nhập vào không hợp lệ -&amp;gt; thông báo lỗi và yêu cầu nhập lại.&lt;/li&gt;&lt;li&gt;2b. số điện thoại, email, mã nhân viên-&amp;gt; thông báo đã tồn tại và yêu cầu nhập lại.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1420" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-15" value="Mô tả chức năng quản lí nhân viên&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: cập nhật thông tin nhân viên&lt;/li&gt;&lt;li&gt;des: user muốn cập nhật thông tin cụ thể của một nhân viên.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;loại trừ nhân viên có trạng thái inactive.&lt;/li&gt;&lt;li&gt;không được cập nhật id.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;thông tin về nhân viên được cập nhật.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng cập nhật nhân viên từ menu quản lí phòng.&lt;/li&gt;&lt;li&gt;2. user nhập id nhân viên.&lt;/li&gt;&lt;li&gt;3. hiển thị thông tin nhân viên cần cập nhật.&lt;/li&gt;&lt;li&gt;4. user chọn thông tin cần cập nhật.&lt;/li&gt;&lt;li&gt;5. user nhập thông tin mới vào.&lt;/li&gt;&lt;li&gt;6. thông báo thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. không thấy id nhân viên trùng khớp -&amp;gt; thông báo lỗi và yêu cầu nhập lại.&lt;/li&gt;&lt;li&gt;2b,5a. thông tin nhập vào không hợp lệ -&amp;gt; thong báo lỗi và yêu cầu nhập lại.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="1420" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-17" value="Mô tả chức năng quản lí nhân viên&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: xóa nhân viên&amp;nbsp;&lt;/li&gt;&lt;li&gt;des: user muốn xóa một nhân viên trong hệ thống.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ áp dụng đối với những nhân viên không có trạng thái inactive&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;chuyển status thành inactive&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng xoá nhân viên từ menu quản lí nhân viên.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. user nhập id nhân viên.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;3. hiển thị thông tin nhân viên cần xóa và yêu cầu xác nhận.&lt;/li&gt;&lt;li&gt;4. user xác nhận xóa&lt;/li&gt;&lt;li&gt;5. hệ thống chuyển trạng thái nhân viên = inactive&lt;/li&gt;&lt;li&gt;6. thông báo thành công.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. không thấy id trùng khớp -&amp;gt; báo lỗi&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="1420" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-18" value="Mô tả chức năng quản lí nhân viên&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: tìm kiếm nhân viên&lt;/li&gt;&lt;li&gt;des: user muốn tìm và hiển thị thông tin một nhân viên&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ áp dụng đối với những nhân viên không có trạng thái inactive&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;hiển thị thông tin nhân viên cần tìm.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng tìm kiếm nhân viên nhân viên từ menu quản lí nhân viên.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. user nhập tên nhân viên cần tìm.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. user nhập khoảng tuổi của nhân viên (từ min đến max)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;4. hiển thị danh sách nhân viên đáp ứng.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;2a. không thấy tên nhân viên trùng khớp -&amp;gt; thông báo không tìm thấy nhân viên.&lt;/li&gt;&lt;li&gt;3a. min &amp;gt; max -&amp;gt; báo lỗi và yêu cầu nhập lại&lt;/li&gt;&lt;li&gt;3b min = max -&amp;gt; tìm các nhân viên có tuổi bằng.&lt;/li&gt;&lt;li&gt;3c tuổi không hợp lệ -&amp;gt; yêu cầu nhập lại.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1930" y="1420" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-19" value="Mô tả chức năng quản lí nhân viên&lt;div&gt;&lt;ul&gt;&lt;li&gt;usecase_name: sắp xếp nhân viên&lt;/li&gt;&lt;li&gt;des: user muốn sắp xếp nhân viên theo lương giảm dần hoặc tên nhân viên tăng dần.&lt;/li&gt;&lt;li&gt;actors: User&lt;/li&gt;&lt;li&gt;pre_condition:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;user đã đăng nhập thành công.&lt;/li&gt;&lt;li&gt;chỉ áp dụng đối với những nhân viên không có trạng thái inactive&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;post_condition:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;hiển thị danh sách nhân viên đã sắp xếp.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;basic_flow:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;1. user chọn chức năng sắp xếp nhân viên nhân viên từ menu quản lí nhân viên.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2a. user chọn :&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sắp xếp nhân viên theo lương giảm dần&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sắp xếp nhân viên theo tên tăng dần.&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. hiển thị danh sách nhân viên đã được sắp xếp&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;sub_flow:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;3a. danh sách nhân viên trống -&amp;gt; báo trống.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2390" y="1420" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-20" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="2510" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-21" value="đăng nhập" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-22" value="đăng xuất" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="2230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-23" value="hiển thị danh sách phòng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="2190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-24" value="thêm mới phòng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="2750" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-25" value="cập nhật phòng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="2650" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-26" value="xóa phòng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="2440" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-27" value="tìm kiếm phòng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="2550" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-28" value="thống kê số nhân viên theo phòng&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="2350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-29" value="thống kê tất cả nhân viên" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="2870" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-30" value="tìm phòng có nhiều nhân viên nhất." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="2190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-31" value="tìm phòng lương cao nhất" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2820" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-32" value="hiển thị danh sách nhân viên" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="2350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-33" value="thêm mới nhân viên" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="2840" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-34" value="cập nhật thông tin nhân viên" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="2750" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-35" value="xóa nhân viên" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="2560" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-36" value="tìm kiếm nhân viên." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="2660" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-37" value="sắp xếp nhân viên theo tên" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="685" y="2460" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-38" value="sắp xếp nhân viên theo lương" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="2350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-40" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-26" target="eSEEJzMh3V37O2y8JKjw-27">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="520" y="2700" as="sourcePoint" />
+            <mxPoint x="680" y="2700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-44" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.417;entryY=0.958;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-37" target="eSEEJzMh3V37O2y8JKjw-32">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="870" y="2480" as="sourcePoint" />
+            <mxPoint x="690" y="2680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-46" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-38" target="eSEEJzMh3V37O2y8JKjw-32">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="830" y="2440" as="sourcePoint" />
+            <mxPoint x="830" y="2490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-47" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-28" target="eSEEJzMh3V37O2y8JKjw-32">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="460" y="2310" as="sourcePoint" />
+            <mxPoint x="620" y="2310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="2300" />
+              <mxPoint x="820" y="2300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-49" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-30" target="eSEEJzMh3V37O2y8JKjw-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="560" y="2570" as="sourcePoint" />
+            <mxPoint x="720" y="2570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-51" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-25" target="eSEEJzMh3V37O2y8JKjw-27">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="820" y="2720" as="sourcePoint" />
+            <mxPoint x="820" y="2660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-54" value="Quản lí thông tin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="590" y="2170" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-55" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-20" target="eSEEJzMh3V37O2y8JKjw-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="2670" as="sourcePoint" />
+            <mxPoint x="580" y="2620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-56" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-20" target="eSEEJzMh3V37O2y8JKjw-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="2540" as="sourcePoint" />
+            <mxPoint x="218" y="2268" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-57" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="eSEEJzMh3V37O2y8JKjw-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="2520" as="sourcePoint" />
+            <mxPoint x="368" y="2268" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-58" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-20" target="eSEEJzMh3V37O2y8JKjw-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="2530" as="sourcePoint" />
+            <mxPoint x="390" y="2400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-59" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="eSEEJzMh3V37O2y8JKjw-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="2530" as="sourcePoint" />
+            <mxPoint x="578" y="2428" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-60" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="eSEEJzMh3V37O2y8JKjw-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="2530" as="sourcePoint" />
+            <mxPoint x="445" y="2490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-61" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="eSEEJzMh3V37O2y8JKjw-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="2530" as="sourcePoint" />
+            <mxPoint x="520" y="2600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-62" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="eSEEJzMh3V37O2y8JKjw-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="2530" as="sourcePoint" />
+            <mxPoint x="438" y="2672" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-63" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="eSEEJzMh3V37O2y8JKjw-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="2530" as="sourcePoint" />
+            <mxPoint x="378" y="2772" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-64" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="2670" as="sourcePoint" />
+            <mxPoint x="1350" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-65" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="2880" as="sourcePoint" />
+            <mxPoint x="1350" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-66" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="942" y="2862" as="sourcePoint" />
+            <mxPoint x="1350" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-67" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="862" y="2772" as="sourcePoint" />
+            <mxPoint x="1350" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-68" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="807" y="2697" as="sourcePoint" />
+            <mxPoint x="1350" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-69" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="810" y="2610" as="sourcePoint" />
+            <mxPoint x="1340" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-70" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="815" y="2510" as="sourcePoint" />
+            <mxPoint x="1350" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-71" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="2400" as="sourcePoint" />
+            <mxPoint x="1340" y="2560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-72" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSEEJzMh3V37O2y8JKjw-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1002" y="2328" as="sourcePoint" />
+            <mxPoint x="1340" y="2550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSEEJzMh3V37O2y8JKjw-73" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1350" y="2560" as="sourcePoint" />
+            <mxPoint x="10" y="2530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1340" y="3030" />
+              <mxPoint y="3030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
